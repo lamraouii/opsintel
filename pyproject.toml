@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opsintel"
+version = "0.1.0"
+description = "Intelligent Operations Analytics & Anomaly Detection Platform"
+requires-python = ">=3.13"
+dependencies = [
+    "pydantic",
+    "pandas",
+    "numpy",
+    "matplotlib"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
